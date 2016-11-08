@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Eastleigh College</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+
+
+    <style>
+
+    .sideBarTitle{
+
+      color:white;
+      font-weight: bolder;
+      font-family: "Lucida Bright", Georgia, serif !important;
+      font-size: 150% ;
+    }
+
+    #sideBarLinks{
+
+      padding-top:80%;
+      color:#777ecb;
+      font-family: "Lucida Bright", Georgia, serif !important;
+
+    }
+
+    #sideBarLinks a {
+
+      text-decoration: none;
+      font-family: "Lucida Bright", Georgia, serif !important;
+
+
+    }
+
+    .panel {
+
+      background-color:#0b0f2f !important;
+    }
+
+.navbar {
+
+  background-color:#1b2155 !important;
+  border-bottom: solid #071f2b 4px !important;
+}
+
+.navbar:after{
+
+background-color:#1b2155 !important;
+
+}
+
+
+.toolbar{
+  background-color:#1b2155 !important;}
+.toolbar:before{
+  background-color: #1b2155 !important;
+}
+
+.content-block-inner:before{
+
+  background-color:#43738c !important;
+
+}
+
+
+.content-block-inner:after{
+
+  background-color:#43738c !important;
+
+}
+
+.titleSpan{
+
+  color:white !important;
+  font-family: "Lucida Bright", Georgia, serif !important;
+
+}
+
+
+.page-content{
+
+  background-color: #699ab4 !important;
+  font-family: "Lucida Bright", Georgia, serif !important;
+
+}
+
+.content-block-inner {
+
+  /*background-color: #699ab4 !important;*/
+  font-family: "Lucida Bright", Georgia, serif !important;
+}
+
+.homePageButtons{
+width:80% !important;
+margin-left: 5% !important;
+border: solid black 4px;
+border-radius: 0% ;
+margin-top: 12%;
+background-color: #43738c !important;
+
+}
+
+.contactCards{
+
+  width:80% !important;
+  margin-left: 5% !important;
+  border: solid black 4px;
+  border-radius: 0% ;
+  margin-top: 0%;
+  background-color: #43738c !important;
+
+}
+.contactCardsContainer{
+
+  margin-top:5% !important;
+}
+
+.buttonText{
+
+color:white;
+font-family: "Lucida Bright", Georgia, serif !important;
+font-size: 200%;
+ text-align: center;
+}
+
+.content-block-title{
+
+  color:white;
+  font-family: "Lucida Bright", Georgia, serif !important;
+
+}
+
+.contactList{
+
+ list-style-type: none;
+
+}
+
+.emailAddress{
+
+  font-family: monospace !important;
+  color:#1b2155 !important;
+}
+
+.phoneNumber{
+
+  font-family: monospace !important;
+  color: #1b2155 !important;
+}
+
+.footerLink{
+
+  color:white;
+  font-weight: bolder;
+  font-family: "Lucida Bright", Georgia, serif !important;
+  font-size: 75% ;
+}
+
+.copyrightPageText{
+
+  color:white;
+  font-weight: bolder;
+  font-family: "Lucida Bright", Georgia, serif !important;
+
+}
+
+.copyrightPageText h2{
+
+  text-align:center;
+
+}
+
+.timeTableItemWrapper{
+
+  height:100px;
+}
+
+.NULLtimeTableWrapper{
+
+  background-color:green !important;
+}
+
+.timeTableListWrapper{
+
+  margin:0px !important;
+  padding:0px !important;
+
+}
+
+    </style>
+  </head>
+  <body>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+      <div class="content-block">
+        <h3 class ="sideBarTitle"><div id="sideBarTitle">Eastleigh College</div></h3>
+        <h3 class ="sideBarTitle">    </h3>
+        <div id="sideBarLinks">
+          <p><a href="https://www.eastleigh.ac.uk/" class="link external" >Eastleigh College Website</a></p>
+          <p><a href="http://www.nationalrail.co.uk/" class="link external">Train Times</a></p>
+          <p><a href="http://bus.southampton.ac.uk/bus-stop/1900HA030194.html" class="link external">Bus Times</a></p>
+          <p><a href="https://www.google.co.uk/maps/place/Eastleigh+College/@50.96119,-1.3611137,17z/data=!3m1!4b1!4m5!3m4!1s0x487473aa209f1d57:0x1365fa9e94ef6074!8m2!3d50.96119!4d-1.358925" class="link external">Google Maps</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar">
+          <!-- Navbar inner for Index page-->
+          <div data-page="index" class="navbar-inner">
+            <!-- We have home navbar without left link-->
+            <!-- main title -->
+            <div class="center sliding"><span class="titleSpan">Eastleigh College</span></div>
+            <div class="right">
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
+          </div>
+          <!-- Navbar inner for About page-->
+          <div data-page="about" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+            <div class="center sliding"> <span class ="titleSpan">Timetables</span></div>
+          </div>
+          <!-- Navbar inner for Services page-->
+          <div data-page="services" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+            <div class="center sliding"><span class ="titleSpan">Useful Contacts</span></div>
+          </div>
+          <!-- Navbar inner for Form page-->
+          <div data-page="form" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+            <div class="center sliding"><span class ="titleSpan">Log-In</span> </div>
+          </div>
+          <!-- Navbar inner for Form page-->
+          <div data-page="eastleighCopyright" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+            <div class="center sliding"><span class ="titleSpan">Eastleigh Copyright</span> </div>
+          </div>
+          <!-- Navbar inner for Form page-->
+          <div data-page="alexAledCopyright" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+            <div class="center sliding"><span class ="titleSpan">Alex &amp; Aled Co.</span> </div>
+          </div>
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Index Page-->
+          <div data-page="index" class="page">
+            <!-- Scrollable page content-->
+            <div class="page-content">
+              <!-- <div class="content-block-title">Choose from the selections below!</div> -->
+<!-- large main buttons on main screen -->
+              <div class="content-block">
+
+                <a href="#about" class="item-link">
+                  <div class="content-block-inner homePageButtons">
+                    <p class="buttonText">Timetables</p>
+                  </div>
+                </a>
+
+                <a href="#services" class="item-link">
+                  <div class="content-block-inner homePageButtons">
+                    <p class="buttonText">Useful Contacts</p>
+                  </div>
+                </a>
+
+                <a href="#form" class="item-link">
+                  <div class="content-block-inner homePageButtons">
+                    <p class="buttonText">Log-In</p>
+                  </div>
+                </a>
+
+
+              </div>
+<!-- end large main buttons on main screen -->
+
+            </div>
+          </div>
+          <!-- timetable Page-->
+          <div data-page="about" class="page cached">
+            <div class="page-content">
+              <div class="copyrightPageText"><h2 class="copyrightPageText">Computer Science</h2></div>
+              <div class="copyrightPageText"><h2 class="copyrightPageText"><em>Student Name</em></h2></div>
+              <div class="content-block timeTableListWrapper">
+
+
+                <div class="list-block accordion-list">
+                  <ul>
+                    <div class="NULLtimeTableItemWrapper">
+                      <li class="accordion-item"><a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                          <div class="item-title">Monday</div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="content-block">
+                          <h4> 09:00 </h4>
+                          <p>Computer Design Algorithms</p>
+                          <h4> 10:00 </h4>
+                          <p>Maths For Programming Students</p>
+                          <h4> 11:00 </h4>
+                          <p>Object Oriented Programming</p>
+                          <h4> 11:15 </h4>
+                          <p>Infomation Systems</p>
+                          <h4> 13:00 </h4>
+                          <p>Real Life Javascript</p>
+                          <h4> 13:45 </h4>
+                          <p>C# and You</p>
+                          <h4> 15:00 </h4>
+                          <p>Tutorial</p>
+                        </div>
+                      </div>
+                    </li>
+                  </div>
+
+                  <div class="NULLtimeTableItemWrapper">
+                    <li class="accordion-item"><a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                          <div class="item-title">Tuesday</div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="content-block">
+                          <h4> 09:00 </h4>
+                          <p>Computer Design Algorithms</p>
+                          <h4> 10:00 </h4>
+                          <p>Maths For Programming Students</p>
+                          <h4> 11:00 </h4>
+                          <p>Object Oriented Programming</p>
+                          <h4> 11:15 </h4>
+                          <p>Infomation Systems</p>
+                          <h4> 13:00 </h4>
+                          <p>Real Life Javascript</p>
+                          <h4> 13:45 </h4>
+                          <p>C# and You</p>
+                          <h4> 15:00 </h4>
+                          <p>Tutorial</p>
+                        </div>
+                      </div>
+                    </li>
+                  </div>
+
+                  <div class="NULLtimeTableItemWrapper">
+                    <li class="accordion-item"><a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                          <div class="item-title">Wednesday</div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="content-block">
+                          <h4> 09:00 </h4>
+                          <p>Computer Design Algorithms</p>
+                          <h4> 10:00 </h4>
+                          <p>Maths For Programming Students</p>
+                          <h4> 11:00 </h4>
+                          <p>Object Oriented Programming</p>
+                          <h4> 11:15 </h4>
+                          <p>Infomation Systems</p>
+                          <h4> 13:00 </h4>
+                          <p>Real Life Javascript</p>
+                          <h4> 13:45 </h4>
+                          <p>C# and You</p>
+                          <h4> 15:00 </h4>
+                          <p>Tutorial</p>
+                        </div>
+                      </div>
+                    </li>
+                  </div>
+
+                  <div class="NULLtimeTableItemWrapper">
+                    <li class="accordion-item"><a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                          <div class="item-title">Thursday</div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="content-block">
+                          <h4> 09:00 </h4>
+                          <p>Computer Design Algorithms</p>
+                          <h4> 10:00 </h4>
+                          <p>Maths For Programming Students</p>
+                          <h4> 11:00 </h4>
+                          <p>Object Oriented Programming</p>
+                          <h4> 11:15 </h4>
+                          <p>Infomation Systems</p>
+                          <h4> 13:00 </h4>
+                          <p>Real Life Javascript</p>
+                          <h4> 13:45 </h4>
+                          <p>C# and You</p>
+                          <h4> 15:00 </h4>
+                          <p>Tutorial</p>
+                        </div>
+                      </div>
+                    </li>
+                  </div>
+
+                  <div class="NULLtimeTableItemWrapper">
+                    <li class="accordion-item"><a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                          <div class="item-title">Friday</div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="content-block">
+                          <h4> 09:00 </h4>
+                          <p>Computer Design Algorithms</p>
+                          <h4> 10:00 </h4>
+                          <p>Maths For Programming Students</p>
+                          <h4> 11:00 </h4>
+                          <p>Object Oriented Programming</p>
+                          <h4> 11:15 </h4>
+                          <p>Infomation Systems</p>
+                          <h4> 13:00 </h4>
+                          <p>Real Life Javascript</p>
+                          <h4> 13:45 </h4>
+                          <p>C# and You</p>
+                          <h4> 15:00 </h4>
+                          <p>Tutorial</p>
+                        </div>
+                      </div>
+                    </li>
+                  </div>
+                  </ul>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+          <div data-page="eastleighCopyright" class="page cached">
+            <div class="page-content">
+              <div class="content-block">
+                <div class="copyrightPageText">
+                  <h2>Eastleigh College Copyright</h2>
+                  <p>
+                    Every care has been taken to ensure the accuracy of the information displayed on this website. However, the College cannot accept liability for claims arising out of errors or omissions or amendments to Government policy relating to funding. The College reserves the right, without notice, to withdraw, merge or vary any course provision or facilities deemed necessary by the College.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div data-page="alexAledCopyright" class="page cached">
+            <div class="page-content">
+              <div class="content-block">
+                <div class="copyrightPageText">
+                  <h2>Alex &amp; Aled Co.</h2>
+                  <p>
+                    Alex &amp; Aled are two amazing and creative web developers form ABC Company.
+                  </p>
+                  <p>
+                    Working on special contract cases we always aim to build the best products for our customers. No matter what they want. We will even use Phonegap!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- useful contact Page-->
+          <div data-page="services" class="page cached">
+            <div class="page-content">
+              <div class="content-block contactCardsContainer">
+
+                  <div class="content-block-inner contactCards">
+                    <p class="contactTextTitle">Trevor Maskall</p>
+                    <p class="contactText">Head of Computer Science</p>
+                    <p class="contactText">Email: <a href="mailto:achapman1@eastleigh.ac.uk" class ="external"><span class="emailAddress">tmaskall@eastleigh.ac.uk</span></a> </p>
+                    <p class="contactText">Phone: <a href="tel:00000000000" class ="external"><span class="phoneNumber">07789 999 909</span></a></p>
+                  </div>
+                  <div class="content-block-inner homePageButtons">
+                    <p class="contactTextTitle">Peter Harris</p>
+                    <p class="contactText">Computer Science Teacher</p>
+                    <p class="contactText">Email: <a href="mailto:achapman1@eastleigh.ac.uk" class ="external"><span class="emailAddress">pharris@eastleigh.ac.uk</span></a> </p>
+                    <p class="contactText">Phone: <a href="tel:00000000000" class ="external"><span class="phoneNumber">07789 999 909</span></a></p>
+                  </div>
+                  <div class="content-block-inner homePageButtons">
+                    <p class="contactTextTitle">Dayani Jayasinghe</p>
+                    <p class="contactText">Computer Science Teacher</p>
+                    <p class="contactText">Email: <a href="mailto:achapman1@eastleigh.ac.uk" class ="external"><span class="emailAddress">djayasinghe@eastleigh.ac.uk</span></a> </p>
+                    <p class="contactText">Phone: <a href="tel:00000000000" class ="external"><span class="phoneNumber">07789 999 909</span></a></p>
+                  </div>
+                  <div class="content-block-inner homePageButtons">
+                    <p class="contactTextTitle">Jed Gibbs</p>
+                    <p class="contactText">Web Technologies Teacher</p>
+                    <p class="contactText">Email: <a href="mailto:achapman1@eastleigh.ac.uk" class ="external"><span class="emailAddress">jgibbs@eastleigh.ac.uk</span></a> </p>
+                    <p class="contactText">Phone: <a href="tel:00000000000" class ="external"><span class="phoneNumber">07789 999 909</span></a></p>
+                  </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- log-in Page-->
+          <div data-page="form" class="page cached">
+            <div class="page-content">
+              <div class="content-block-title titleSpan">Eastleigh College Log-In</div>
+
+              <div class="list-block">
+                <ul>
+
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-email"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title label">E-mail</div>
+                        <div class="item-input">
+                          <input type="email" placeholder="E-mail">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-password"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title label">Password</div>
+                        <div class="item-input">
+                          <input type="password" placeholder="Password">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+              <div class="content-block">
+                <div class="row">
+                  <div class="col-50"><a href="#" class="back link button button-big button-fill color-red">Cancel</a></div>
+                  <div class="col-50">
+                    <input type="submit" value="Submit" class="button button-big button-fill color-green">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <!-- Bottom Toolbar-->
+        <div class="toolbar">
+          <div class="toolbar-inner"><a href="#eastleighCopyright" class="item-link"><span class="footerLink">Eastleigh College &copy;</span></a><a href="#alexAledCopyright" class="item-link"><span class="footerLink">Alex &amp; Aled Co.</span></a></div>
+        </div>
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+</html>
